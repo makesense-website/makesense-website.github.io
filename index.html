@@ -1,0 +1,235 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MakeSense - Making Your Life Sensible</title>
+<style>
+:root {
+  --primary-color: #6C63FF;
+  --secondary-color: #2A2A72;
+  --text-color: #333;
+  --light-bg: #F8F9FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.navbar {
+  padding: 1rem 5%;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.hero {
+  padding: 8rem 5% 4rem;
+  background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.features {
+  padding: 5rem 5%;
+  background: white;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--light-bg);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.floating-phone {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="https://makesense.app" class="navbar-brand">MakeSense</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Make Sense of Your Digital Life</h1>
+    <p>Streamline your daily tasks, boost productivity, and bring clarity to your digital world with MakeSense - your all-in-one solution for modern life management.</p>
+    <a href="https://apps.apple.com/app/makesense" class="cta-button">Download Now</a>
+  </div>
+  <div class="hero-image floating-phone">
+    <svg width="400" height="600" viewBox="0 0 400 600">
+      <!-- Stylized Phone Frame -->
+      <rect x="50" y="20" width="300" height="560" rx="30" fill="#2A2A72"/>
+      <rect x="70" y="40" width="260" height="520" rx="20" fill="#FFFFFF"/>
+      <!-- App Interface Elements -->
+      <rect x="90" y="80" width="220" height="60" rx="10" fill="#6C63FF" opacity="0.8"/>
+      <rect x="90" y="160" width="220" height="40" rx="5" fill="#F0F0F0"/>
+      <rect x="90" y="220" width="220" height="40" rx="5" fill="#F0F0F0"/>
+      <rect x="90" y="280" width="220" height="40" rx="5" fill="#F0F0F0"/>
+    </svg>
+  </div>
+</section>
+
+<section class="features">
+  <h2>Why Choose MakeSense?</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6C63FF" stroke-width="2"/>
+        <path d="M9 12L11 14L15 10" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3>Smart Organization</h3>
+      <p>Automatically categorize and prioritize your tasks, emails, and notifications using AI-powered intelligence.</p>
+    </div>
+    
+    <div class="feature-card">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="#6C63FF" stroke-width="2"/>
+        <path d="M12 15V23" stroke="#6C63FF" stroke-width="2"/>
+        <path d="M7 20H17" stroke="#6C63FF" stroke-width="2"/>
+      </svg>
+      <h3>Intuitive Interface</h3>
+      <p>Beautiful, clean design that makes managing your digital life a breeze. Everything you need, right where you expect it.</p>
+    </div>
+    
+    <div class="feature-card">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#6C63FF" stroke-width="2"/>
+        <path d="M18.5 18.5L22 22" stroke="#6C63FF" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>Powerful Search</h3>
+      <p>Find anything instantly with our powerful search functionality. Never lose track of important information again.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Animation on scroll
+    const cards = document.querySelectorAll('.feature-card');
+    
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.6s ease-out';
+        observer.observe(card);
+    });
+});
+</script>
+
+</body></html>
